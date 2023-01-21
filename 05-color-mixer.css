@@ -1,0 +1,38 @@
+* {
+    box-sizing: border-box;
+}
+
+header {
+    _height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 2rem;
+    background-color: rgba(255, 255, 255, 0.8);
+    filter: drop-shadow(0px 0px 4px lightgrey)
+}
+
+body {
+    margin: 0;
+    background-color: darkslategrey;
+}
+
+input ~ input {
+    margin-left: 2rem;
+}
+
+#red { 
+    accent-color: red;
+}
+
+#green { 
+    accent-color: green;
+}
+
+#blue { 
+    accent-color: blue;
+}
+
+.color-code {
+    font-size: 2rem;
+}

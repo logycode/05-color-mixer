@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color mixer</title>
+    <link rel="stylesheet" href="./05-color-mixer.css">
+</head>
+<body>
+    <header>
+        <div>
+            <input type="range" name="red" id="red" value="255" min="0" max="255" step="1">
+            <input type="range" name="green" id="green" value="255" min="0" max="255" step="1">
+            <input type="range" name="blue" id="blue" value="255" min="0" max="255" step="1">
+        </div>
+        <div>
+            <p class="color-code">r: <span class="redOutput"></span> g: <span class="greenOutput"></span> b: <span class="blueOutput"></span></p>
+        </div>
+        
+    </header>
+    <script src="./05-color-mixer.js"></script>
+</body>
+</html>
