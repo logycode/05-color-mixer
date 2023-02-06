@@ -1,24 +1,30 @@
 <!DOCTYPE html>
 <html lang="de">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Color mixer</title>
-    <link rel="stylesheet" href="./05-color-mixer.css">
+    <link rel="stylesheet" href="./main.css">
 </head>
+
 <body>
     <header>
-        <div>
-            <input type="range" name="red" id="red" value="255" min="0" max="255" step="1">
-            <input type="range" name="green" id="green" value="255" min="0" max="255" step="1">
-            <input type="range" name="blue" id="blue" value="255" min="0" max="255" step="1">
+        <div class="header">
+            <div>
+                <input type="range" name="r" id="r" value="255" min="0" max="255" step="1">
+                <input type="range" name="g" id="g" value="255" min="0" max="255" step="1">
+                <input type="range" name="b" id="b" value="255" min="0" max="255" step="1">
+            </div>
+            <div>
+                <p class="color-code">r: <span class="r"></span> g: <span class="g"></span> b: <span class="b"></span>
+                </p>
+            </div>
         </div>
-        <div>
-            <p class="color-code">r: <span class="red"></span> g: <span class="green"></span> b: <span class="blue"></span></p>
-        </div>
-        
+        <button id="button">Random Color</button>
     </header>
-    <script src="./05-color-mixer.js"></script>
+    <script src="./main.js"></script>
 </body>
+
 </html>
