@@ -39,8 +39,8 @@ document.addEventListener("input", (event) => {
 
   render();
 });
-document.querySelector("button").addEventListener("click", (event) => {
-  callApi();
+document.querySelector("button").addEventListener("click", async (event) => {
+  await callApi();
   render();
   event.target.blur();
 });
